@@ -11,9 +11,7 @@
 #### Reglas de negocio
 
 1. El numero de identidad debe ser unico en el sistema. No se permiten dos cuentas de usuario con el mismo numero de documento de identidad.
-
 2. El usuario debe ser mayor de 18 años.
-
 3. Datos obligatorios: Nombre, Apellido, Numero telefonico, Contraseña, Fecha de nacimiento.
 
 ---
