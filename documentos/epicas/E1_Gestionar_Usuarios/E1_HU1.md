@@ -24,10 +24,15 @@
 
 ```gherkin
 Dado que estoy en la pagina de "Registro"
+
 Cuando ingreso un nombre, apellido, fecha de nacimiento valida
+
 Y un numero de identidad no registrado previamente
+
 Y me intento registrar
+
 Entonces el sistema debe mostrar un mensaje que indique que el registro fue correcto
+
 Y redirigir al usuario a la pagina de inicio de sesion
 ```
 
@@ -35,9 +40,13 @@ Y redirigir al usuario a la pagina de inicio de sesion
 
 ```gherkin
 Dado que ya existe una cuenta activa con el numero de identidad "1234"
+
 Cuando intento registrarme con ese mismo numero de identidad
+
 Y completo el registro de los campos obligatorios
+
 Y me intento registrar
+
 Entonces el sistema debe informar que ya existe un usuario activo con el mismo numero de identidad, y no crear el nuevo registro.
 ```
 
@@ -45,9 +54,13 @@ Entonces el sistema debe informar que ya existe un usuario activo con el mismo n
 
 ```gherkin
 Dado que estoy en el formulario de registro
+
 Cuando ingrese una fecha de nacimiento que resulta en una edad menor a 18 años
+
 Y completo el registro de los campos obligatorios
+
 Y me intento registrar
+
 Entonces el sistema impide el envio del formulario e indicar que el usuario debe ser mayor de 18 años para poder registrarse.
 ```
 
@@ -55,8 +68,11 @@ Entonces el sistema impide el envio del formulario e indicar que el usuario debe
 
 ```gherkin
 Dado que estoy en el formulario de registro
+
 Cuando dejo vacio uno o mas campos obligatorios
+
 Y me intento registrar
+
 Entonces el sistema debe mostar indicadores visuales en los campos que faltan por completar y el boton de registro debe permanecer deshabilitado
 ```
 
